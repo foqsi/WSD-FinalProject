@@ -165,6 +165,20 @@ footer>p {
 
 
 
+/******************** MEDIA ****************************/
+@media screen and (max-width: 1024px) {
+    body {
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
 
 @media print {
     .HidePrint {
