@@ -1,0 +1,173 @@
+body {
+    background-image: repeating-radial-gradient(#6B8140, #363636);
+    font-family: playfair display, serif;
+    font-size: 1.6em;
+    margin: 0 auto;
+    max-width: 1024px;
+    min-width: 720px;
+}
+
+header {
+    background: #3e553d;
+    /* border: 2px solid black; */
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    color: #0E1721;
+    font-size: 0.6em;
+    padding: 7px;
+    text-align: center;
+}
+
+/******************** WRAPPER *************************/
+#wrapper {
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #242424;
+    color: black;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/******************** NAV *************************/
+nav a:visited,
+nav a:link {
+    color: #168013;
+}
+
+nav a:hover {
+    color: #24ff1d;
+}
+
+nav {
+    padding-bottom: 60px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #000000;
+}
+
+nav li {
+    display: inline;
+    padding: 0 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #3e553d;
+    margin-top: 10px;
+}
+
+#dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 160px;
+    font-size: .8em;
+    z-index: 1;
+    left: 0;
+}
+
+#dropdown:hover+.dropdown-content {
+    position: relative;
+    display: inline;
+}
+
+
+/******************** MAIN *************************/
+#content {
+    display: flex;
+
+}
+
+main>h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+}
+
+#usa>img,
+#vietnam>img {
+    width: 100%;
+}
+
+#usa,
+#vietnam {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+#usa>h2,
+#vietnam>h2 {
+
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#usa>p,
+#vietnam>p {
+    font-size: 0.6em;
+    text-align: left;
+}
+
+/******************** FORMS *************************/
+label {
+    display: block;
+    float: left;
+    width: 10em;
+    padding-right: 1em;
+    text-align: right;
+}
+
+input,
+textarea {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.rating-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px;
+}
+
+/******************** FOOTER *************************/
+footer {
+    font-size: 0.70em;
+    font-style: italic;
+    text-align: center;
+}
+
+footer>p {
+    font-size: 0.60em;
+}
+
+
+
+
+
+@media print {
+    .HidePrint {
+        display: none;
+    }
+}

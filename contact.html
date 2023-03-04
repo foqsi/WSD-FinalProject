@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Global Web</title>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>United States or Vietnam</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <div class="dropdown">
+                    <li id="countries"><a href=" ">Countries</a></li>
+                    <div class="dropdown-content">
+                        <li><a href="unitedstates.html">United States</a></li>
+                        <li><a href="vietnam.html">Vietnam</a></li>
+                    </div>
+                </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h5>Contact Us</h5>
+            <h6>Asterisk(*) is required</h6>
+
+            <form class="contact" method="post" onsubmit="return validateForm();"
+                action="http://apollo1.occc.edu/genericFormHandler.php">
+                <label for="FName">*First Name:</label>
+                <input type="textbox" name="FName" id="FName" accesskey="F" tabindex="1" class="required">
+                <label for="LName">*Last Name:</label>
+                <input type="textbox" name="LName" id="LName" accesskey="L" tabindex="2" class="required">
+                <label for="Email">*Email:</label>
+                <input type="email" name="Email" id="Email" accesskey="E" tabindex="3" class="required email">
+
+                <label for="rating">Leave a rating:</label>
+
+                <div class="rating-buttons">
+                    1<div class="rating"><input type="radio" name="rating" id="rating" num="1" accesskey="1"
+                            tabindex="4"></div>
+                    2<div class="rating"><input type="radio" name="rating" id="rating" num="2" accesskey="2"
+                            tabindex="5"></div>
+                    3<div class="rating"><input type="radio" name="rating" id="rating" num="3" accesskey="3"
+                            tabindex="6"></div>
+                    4<div class="rating"><input type="radio" name="rating" id="rating" num="4" accesskey="4"
+                            tabindex="7"></div>
+                    5<div class="rating"><input type="radio" name="rating" id="rating" num="5" accesskey="5"
+                            tabindex="8"></div>
+                </div>
+
+                <label for="Comments">Comments:</label>
+                <textarea for="Comments" type="text" name="Comments" id="Comments" accesskey="C" tabindex="9"
+                    placeholder="Leave a comment"></textarea>
+                <input type="submit" value="Submit" id="Submit" name="Submit" class="HidePrint" accesskey="S"
+                    tabindex="10">
+            </form>
+
+        </main>
+
+        <footer>
+            <script>
+                document.write("<p>This document was last modified on: ");
+                document.write(document.lastModified);
+                document.write("</p>");
+            </script>
+            <p>Edward@Davis.com</p>
+            <p>Disclaimer: Oklahoma City Community College does not necessarily endorse the content or the respective
+                links of this webpage</p>
+        </footer>
+</body>
+
+</html>
