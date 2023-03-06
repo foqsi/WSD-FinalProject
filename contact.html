@@ -10,6 +10,21 @@
     <meta name="description" content="This is a website about the United States and Vietnam">
     <meta name="keywords" content="United States, Vietnam, Countries">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+    <script src="script.js"></script>
+    <style>
+        body {
+            background-image: none;
+            background-color: #474e3a;
+        }
+
+        #wrapper {
+            background-image: repeating-radial-gradient(#6B8140, #363636);
+        }
+    </style>
 </head>
 
 <body>
@@ -32,40 +47,53 @@
             </ul>
         </nav>
         <main>
-            <h5>Contact Us</h5>
-            <h6>Asterisk(*) is required</h6>
+            <div class="#" id="contact-button">
+                <h5>Contact Us</h5>
+            </div>
+            <div class="contact-page">
+                <h6>Asterisk(*) is required</h6>
 
-            <form class="contact" method="post" onsubmit="return validateForm();"
-                action="http://apollo1.occc.edu/genericFormHandler.php">
-                <label for="FName">*First Name:</label>
-                <input type="textbox" name="FName" id="FName" accesskey="F" tabindex="1" class="required">
-                <label for="LName">*Last Name:</label>
-                <input type="textbox" name="LName" id="LName" accesskey="L" tabindex="2" class="required">
-                <label for="Email">*Email:</label>
-                <input type="email" name="Email" id="Email" accesskey="E" tabindex="3" class="required email">
+                <form class="contact" method="post" onsubmit="return validateForm();"
+                    action="http://apollo1.occc.edu/genericFormHandler.php">
+                    <label for="FName"><span>*</span>First Name:</label>
+                    <input type="textbox" name="FName" id="FName" accesskey="F" tabindex="1" class="required">
+                    <label for="LName"><span>*</span>Last Name:</label>
+                    <input type="textbox" name="LName" id="LName" accesskey="L" tabindex="2" class="required">
+                    <label for="Email"><span>*</span>Email:</label>
+                    <input type="email" name="Email" id="Email" accesskey="E" tabindex="3" class="required email">
 
-                <label for="rating">Leave a rating:</label>
+                    <label for="rating" id="rating-text"><span>*</span>Please rate this site's features:</label>
 
-                <div class="rating-buttons">
-                    1<div class="rating"><input type="radio" name="rating" id="rating" num="1" accesskey="1"
-                            tabindex="4"></div>
-                    2<div class="rating"><input type="radio" name="rating" id="rating" num="2" accesskey="2"
-                            tabindex="5"></div>
-                    3<div class="rating"><input type="radio" name="rating" id="rating" num="3" accesskey="3"
-                            tabindex="6"></div>
-                    4<div class="rating"><input type="radio" name="rating" id="rating" num="4" accesskey="4"
-                            tabindex="7"></div>
-                    5<div class="rating"><input type="radio" name="rating" id="rating" num="5" accesskey="5"
-                            tabindex="8"></div>
-                </div>
+                    <div class="rating-buttons">
+                        <span>Amazing</span>
+                        <div class="rating"><input type="radio" name="rating" id="rating" num="5" accesskey="1"
+                                tabindex="4"></div>
+                        <span>Above Average</span>
+                        <div class="rating"><input type="radio" name="rating" id="rating" num="4" accesskey="2"
+                                tabindex="5"></div>
+                        <span>Average</span>
+                        <div class="rating"><input type="radio" name="rating" id="rating" num="3" accesskey="3"
+                                tabindex="6"></div>
+                        <span>Below Average</span>
+                        <div class="rating"><input type="radio" name="rating" id="rating" num="2" accesskey="4"
+                                tabindex="7"></div>
+                        <span>Horrible</span>
+                        <div class="rating"><input type="radio" name="rating" id="rating" num="1" accesskey="5"
+                                tabindex="8"></div>
+                    </div>
 
-                <label for="Comments">Comments:</label>
-                <textarea for="Comments" type="text" name="Comments" id="Comments" accesskey="C" tabindex="9"
-                    placeholder="Leave a comment"></textarea>
-                <input type="submit" value="Submit" id="Submit" name="Submit" class="HidePrint" accesskey="S"
-                    tabindex="10">
-            </form>
+                    <div class="CommentSection">
+                        <label for="Comments" id="CommentText">Comments:</label>
+                        <textarea for="Comments" id="CommentBox" type="text" name="Comments" id="Comments" accesskey="C"
+                            tabindex="9" placeholder="Leave a comment"></textarea>
+                    </div>
+                    <input type="submit" value="Submit" id="Submit" name="Submit" class="HidePrint" accesskey="S"
+                        tabindex="10">
+                    <input type="reset" value="Reset" id="reset" name="reset" class="HidePrint" accesskey="R"
+                        tabindex="11">
 
+                </form>
+            </div>
         </main>
 
         <footer>
