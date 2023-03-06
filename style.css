@@ -9,7 +9,6 @@ body {
 
 header {
     background: #3e553d;
-    /* border: 2px solid black; */
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     color: #0E1721;
@@ -66,26 +65,24 @@ nav li {
     border: 2px solid black;
     border-radius: 10px;
     background-color: #3e553d;
-    margin-top: 10px;
 }
 
-#dropdown {
-    position: relative;
-    display: inline-block;
-}
 
 .dropdown-content {
     display: none;
     position: absolute;
     width: 160px;
-    font-size: .8em;
-    z-index: 1;
-    left: 0;
 }
 
-#dropdown:hover+.dropdown-content {
+.dropdown-content li {
+    display: block;
+    margin-top: 0;
     position: relative;
-    display: inline;
+    right: 21px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 
