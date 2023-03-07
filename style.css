@@ -174,9 +174,14 @@ main h6 {
     color: #682323;
 }
 
-label p {
+label>p {
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+#rating-text {
     display: inline;
-    font-size: 0.6em;
+    font-size: 0.55em;
     width: fit-content;
 }
 
@@ -197,6 +202,7 @@ textarea {
     gap: 2px;
     padding-bottom: 10px;
     padding-top: 10px;
+    margin-bottom: 25px;
 }
 
 .rating {
@@ -226,6 +232,10 @@ textarea {
     padding: 5px;
     text-align: center;
     width: 160px;
+}
+
+#reset {
+    margin-bottom: 50px;
 }
 
 #Submit:hover,

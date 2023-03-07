@@ -29,9 +29,9 @@ $(document).ready(function () {
             $("#reset").slideDown(2100);
         } else {
             $("#test").hide(3000);
-            $(".c001").hide(1800);
-            $(".c002").hide(1800);
-            $(".c003").hide(1800);
+            $(".c001").hide(1000);
+            $(".c002").hide(1000);
+            $(".c003").hide(1000);
             $("#rating-text").slideUp(1700);
             $("#c014").slideUp(1300);
             $("#c024").slideUp(1300);
