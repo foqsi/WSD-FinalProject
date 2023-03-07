@@ -48,48 +48,66 @@
         </nav>
         <main>
             <div class="#" id="contact-button">
-                <h5>Contact Us</h5>
+                Contact Us
             </div>
             <div class="contact-page">
-                <h6>Asterisk(*) is required</h6>
+                <div id="test">
+                    <h6>Asterisk(*) is required</h6>
+                </div>
 
                 <form class="contact" method="post" onsubmit="return validateForm();"
                     action="http://apollo1.occc.edu/genericFormHandler.php">
-                    <label for="FName"><span>*</span>First Name:</label>
-                    <input type="textbox" name="FName" id="FName" accesskey="F" tabindex="1" class="required">
-                    <label for="LName"><span>*</span>Last Name:</label>
-                    <input type="textbox" name="LName" id="LName" accesskey="L" tabindex="2" class="required">
-                    <label for="Email"><span>*</span>Email:</label>
-                    <input type="email" name="Email" id="Email" accesskey="E" tabindex="3" class="required email">
+                    <!-- <label for="FName" class="c001" style="text-align: right;"><span>*</span>First Name:</label> -->
+                    <input type="textbox" class="c001" name="FName" id="FName" accesskey="F" tabindex="1"
+                        placeholder="*First Name" class="required">
+                    <!-- <label for="LName" class="c002" style="text-align: right;"><span>*</span>Last Name:</label> -->
+                    <input type="textbox" class="c002" name="LName" id="LName" accesskey="L" tabindex="2"
+                        placeholder="*Last Name" class="required">
+                    <!-- <label for="Email" class="c003" style="text-align: right;"><span>*</span>Email:</label> -->
+                    <input type="email" class="c003" name="Email" id="Email" accesskey="E" tabindex="3"
+                        placeholder="*Email" class="required email">
 
-                    <label for="rating" id="rating-text"><span>*</span>Please rate this site's features:</label>
+                    <label for="rating" id="rating-text">
+                        <p>Please rate this site's features:</p>
+                    </label>
 
                     <div class="rating-buttons">
-                        <span>Amazing</span>
-                        <div class="rating"><input type="radio" name="rating" id="rating" num="5" accesskey="1"
-                                tabindex="4"></div>
-                        <span>Above Average</span>
-                        <div class="rating"><input type="radio" name="rating" id="rating" num="4" accesskey="2"
-                                tabindex="5"></div>
-                        <span>Average</span>
-                        <div class="rating"><input type="radio" name="rating" id="rating" num="3" accesskey="3"
-                                tabindex="6"></div>
-                        <span>Below Average</span>
-                        <div class="rating"><input type="radio" name="rating" id="rating" num="2" accesskey="4"
-                                tabindex="7"></div>
-                        <span>Horrible</span>
-                        <div class="rating"><input type="radio" name="rating" id="rating" num="1" accesskey="5"
-                                tabindex="8"></div>
+                        <div id="c014">
+                            <!-- <span>Amazing</span> -->
+                            <div class="rating" name="rating" id="rating" num="5" accesskey="1" tabindex="4">1</div>
+                        </div>
+
+                        <div id="c024">
+                            <!-- <span>Above Average</span> -->
+                            <div class="rating" name="rating" id="rating" num="4" accesskey="2" tabindex="5">2</div>
+                        </div>
+
+                        <div id="c034">
+                            <!-- <span>Average</span> -->
+                            <div class="rating" name="rating" id="rating" num="3" accesskey="3" tabindex="6">3</div>
+                        </div>
+
+                        <div id="c044">
+                            <!-- <span>Below Average</span> -->
+                            <div class="rating" name="rating" id="rating" num="2" accesskey="4" tabindex="7">4</div>
+                        </div>
+
+                        <div id="c054">
+                            <!-- <span>Horrible</span> -->
+                            <div class="rating" name="rating" id="rating" num="1" accesskey="5" tabindex="8">5</div>
+                        </div>
                     </div>
 
                     <div class="CommentSection">
-                        <label for="Comments" id="CommentText">Comments:</label>
-                        <textarea for="Comments" id="CommentBox" type="text" name="Comments" id="Comments" accesskey="C"
-                            tabindex="9" placeholder="Leave a comment"></textarea>
+                        <!-- <label for="Comments" id="CommentText" id="c005" style="text-align: right;">Comments:</label> -->
+                        <textarea for=" Comments" id="CommentBox" id="c005" type="text" name="Comments" id="Comments"
+                            accesskey="C" tabindex="9" placeholder="Leave a comment"></textarea>
                     </div>
-                    <input type="submit" value="Submit" id="Submit" name="Submit" class="HidePrint" accesskey="S"
-                        tabindex="10">
-                    <input type="reset" value="Reset" id="reset" name="reset" class="HidePrint" accesskey="R"
+
+
+                    <input type="submit" value="Submit" id="Submit" name="Submit" class="HidePrint" id="c006"
+                        accesskey="S" tabindex="10">
+                    <input type="reset" value="Reset" id="reset" name="reset" class="HidePrint" id="c006" accesskey="R"
                         tabindex="11">
 
                 </form>
