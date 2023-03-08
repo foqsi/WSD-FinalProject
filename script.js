@@ -6,6 +6,8 @@ function validateForm() {
     return true;
 }
 
+
+
 $(document).ready(function () {
     $('form').validate();
 });

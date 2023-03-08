@@ -65,13 +65,23 @@ nav li {
     border: 2px solid black;
     border-radius: 10px;
     background-color: #3e553d;
+    z-index: 1;
+}
+
+.dropdown-content>li {
+    border-radius: none;
+    border: none;
+    border-bottom: 1px solid #2e2e2e;
+    border-right: 1px solid #2e2e2e;
+    border-left: 1px solid #2e2e2e;
+    background-color: #3e553d;
 }
 
 
 .dropdown-content {
     display: none;
     position: absolute;
-    width: 160px;
+    width: 200px;
 }
 
 .dropdown-content li {
