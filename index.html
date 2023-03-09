@@ -16,9 +16,12 @@
     <![endif]-->
 
     <title>Global Web</title>
+
+    <script src="script.js"></script>
+
 </head>
 
-<body>
+<body onload="lastModified()">
     <div id="wrapper">
         <header>
             <h1>United States or Vietnam</h1>
@@ -91,11 +94,7 @@
         </main>
 
         <footer>
-            <script>
-                document.write("<p>Last modified: ");
-                document.write(document.lastModified);
-                document.write("</p>");
-            </script>
+            <p>Last Modified: <span class="lastModified"></span></p>
             <p>Edward@Davis.com</p>
             <p>Disclaimer: Oklahoma City Community College does not necessarily endorse the content or the respective
                 links of this webpage</p>

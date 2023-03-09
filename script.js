@@ -6,9 +6,14 @@ function validateForm() {
     return true;
 }
 
+function lastModified() {
+    var lastMod = document.lastModified;
+    document.getElementById("lastModified").innerHTML = lastMod;
+}
+
 $(document).ready(function () {
     $('form').validate();
-    // $(".contact-page").hide();
+    $(".contact-page").hide();
     $(document).on("click", "#contact-button", function () {
         $(".contact-page").slideToggle(1000);
     });
