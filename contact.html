@@ -2,14 +2,13 @@
 <html>
 
 <head>
-
-    <title>Global Web</title>
-    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <meta name="author" content="Edward Davis">
-    <meta name="description" content="This is a website about the United States and Vietnam">
-    <meta name="keywords" content="United States, Vietnam, Countries">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <title>Global Web</title>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -34,18 +33,22 @@
         </header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <div id="cz">
+                    <li><a href="index.html">Home</a></li>
+                </div>
                 <div class="dropdown">
-                    <li id="countries"><a href=" ">Countries</a></li>
+                    <li><a href="#">Countries</a></li>
+
                     <div class="dropdown-content">
                         <li><a href="unitedstates.html">About The US</a></li>
                         <li><a href="vietnam.html">About Vietnam</a></li>
-                        <li><a href="countrycompare.html">Living Conditions</a></li>
-                        <li><a href="countrycontrast.html">Transportation</a></li>
+                        <li><a href="liviingconditions.html">Living Conditions</a></li>
+                        <li><a href="transportation.html">Transportation</a></li>
                     </div>
                 </div>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
+                <div id="cz">
+                    <li><a href="contact.html">Contact</a></li>
+                </div>
             </ul>
         </nav>
         <main>
@@ -72,7 +75,7 @@
                     <div class="CommentSection">
                         <!-- <label for="Comments" id="CommentText" id="c005" style="text-align: right;">Comments:</label> -->
                         <textarea for="Comments" id="CommentBox" id="c005" type="text" name="Comments" id="Comments"
-                            accesskey="C" tabindex="9" placeholder="Leave a comment" style="width: 165px"></textarea>
+                            accesskey="C" tabindex="4" placeholder="Leave a comment" style="width: 170px"></textarea>
                     </div>
 
                     <label for="rating" id="rating-text">
@@ -82,32 +85,31 @@
                     <div class="rating-buttons">
                         <div id="c014">
                             <!-- <span>Amazing</span> -->
-                            <div class="rating" name="rating" id="rating" num="5" value="1" accesskey="1" tabindex="4">1
+                            <div class="rating" name="rating" id="rating" num="5" value="1" accesskey="1" tabindex="5">1
                             </div>
                         </div>
 
                         <div id="c024">
                             <!-- <span>Above Average</span> -->
-                            <div class="rating" name="rating" id="rating" num="4" value="2" accesskey="2" tabindex="5">2
+                            <div class="rating" name="rating" id="rating" num="4" value="2" accesskey="2" tabindex="6">2
                             </div>
                         </div>
 
                         <div id="c034">
                             <!-- <span>Average</span> -->
-                            <div class="rating" name="rating" id="rating" num="3" value="3" accesskey="3" tabindex="6">
-                                <input type="radio" name="rating" value="3" id="c034" accesskey="3" tabindex="6">
+                            <div class="rating" name="rating" id="rating" num="3" value="3" accesskey="3" tabindex="7">3
                             </div>
                         </div>
 
                         <div id="c044">
                             <!-- <span>Below Average</span> -->
-                            <div class="rating" name="rating" id="rating" num="2" value="4" accesskey="4" tabindex="7">4
+                            <div class="rating" name="rating" id="rating" num="2" value="4" accesskey="4" tabindex="8">4
                             </div>
                         </div>
 
                         <div id="c054">
                             <!-- <span>Horrible</span> -->
-                            <div class="rating" name="rating" id="rating" num="1" value="5" accesskey="5" tabindex="8">5
+                            <div class="rating" name="rating" id="rating" num="1" value="5" accesskey="5" tabindex="9">5
                             </div>
                         </div>
                     </div>
@@ -123,7 +125,7 @@
 
         <footer>
             <script>
-                document.write("<p>This document was last modified on: ");
+                document.write("<p>Last modified: ");
                 document.write(document.lastModified);
                 document.write("</p>");
             </script>

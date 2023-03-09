@@ -55,8 +55,16 @@ nav ul {
     list-style-type: none;
     gap: 10px;
     margin: 0;
-    padding: 0;
+    padding: 2px;
     border-bottom: 1px solid #000000;
+    border-top: 1px solid #000000;
+}
+
+#cz:hover,
+.dropdown:hover,
+.dropdown-content>li:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
 
 nav li {
@@ -65,7 +73,6 @@ nav li {
     border: 2px solid black;
     border-radius: 10px;
     background-color: #3e553d;
-    z-index: 1;
 }
 
 .dropdown-content>li {
@@ -89,6 +96,7 @@ nav li {
     margin-top: 0;
     position: relative;
     right: 21px;
+    z-index: 1;
 }
 
 .dropdown:hover .dropdown-content {
@@ -97,9 +105,14 @@ nav li {
 
 
 /******************** MAIN *************************/
-#content {
+.content {
     display: flex;
+    flex-direction: row;
+}
 
+p {
+    font-size: 0.8em;
+    text-align: justify;
 }
 
 main>h2 {
@@ -124,7 +137,6 @@ main>h2 {
 
 #usa>h2,
 #vietnam>h2 {
-
     font-size: 1.6em;
     font-weight: bold;
     text-align: center;
@@ -136,6 +148,17 @@ main>h2 {
     text-align: left;
 }
 
+/* LIVING CONDITIONS */
+.text-left,
+.text-right {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    display: block;
+}
+
+
 /******************** FOOTER *************************/
 footer {
     font-size: 0.70em;
@@ -145,6 +168,7 @@ footer {
 
 footer>p {
     font-size: 0.60em;
+    text-align: center;
 }
 
 /******************** FORMS *************************/
@@ -191,7 +215,7 @@ label>p {
 
 #rating-text {
     display: inline;
-    font-size: 0.55em;
+    font-size: 1em;
     width: fit-content;
 }
 
@@ -256,8 +280,6 @@ textarea {
     transform: scale(1.05);
     transition: all 0.3s ease;
 }
-
-
 
 /* NO LONGER USED */
 /* label {
