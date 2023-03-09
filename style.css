@@ -339,9 +339,14 @@ label.error {
 
 /* Smartphone */
 @media screen and (max-width: 768px) {
+    #usa, #vietnam {
+        width: auto;
+    }
+
     body {
         width: 100%;
         max-width: 768px;
+        min-width: 0;
     }
 
     header {
