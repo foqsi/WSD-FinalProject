@@ -103,6 +103,9 @@ nav li {
     display: block;
 }
 
+.mobile {
+    display: none;
+}
 
 /******************** MAIN *************************/
 .content {
@@ -307,32 +310,109 @@ textarea {
 /******************** Validation *************************/
 label.error {
     color: red;
-    float: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.85em;
+    font-size: 0.4em;
     font-style: italic;
-    left: 28em;
-    position: relative;
-    text-align: left;
-    top: -1.5em;
-    width: 20em;
+
 }
 
 
 
 /******************** MEDIA ****************************/
+
+
+/* Tablet */
 @media screen and (max-width: 1024px) {
     body {
-        max-width: 100%;
+        max-width: 98%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
     }
 }
 
-@media screen and (max-width: 720px) {
+
+/* Smartphone */
+@media screen and (max-width: 768px) {
     body {
-        max-width: 100%;
+        width: 100%;
+        max-width: 768px;
     }
+
+    header {
+        text-align: left;
+    }
+
+    nav {
+        font-size: 1.3em;
+    }
+
+    nav ul {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        border-radius: 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 5px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        align-items: left;
+    }
+
+    img {
+        display: none;
+    }
+
+    main>h2 {
+        font-size: 1.5em;
+        text-align: left;
+    }
+
+    p {
+        font-size: 0.8em;
+        text-align: left !important;
+    }
+
+    footer>p {
+        text-align: center !important;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    #cz:hover,
+    .dropdown:hover,
+    .dropdown-content>li:hover {
+        transform: none;
+    }
+
 }
 
+
+/* Print */
 @media print {
     .HidePrint {
         display: none;
