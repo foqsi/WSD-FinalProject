@@ -8,11 +8,7 @@ function validateForm() {
 
 $(document).ready(function () {
     $('form').validate();
-});
-
-
-$(document).ready(function () {
-    $(".contact-page").hide();
+    // $(".contact-page").hide();
     $(document).on("click", "#contact-button", function () {
         $(".contact-page").slideToggle(1000);
     });

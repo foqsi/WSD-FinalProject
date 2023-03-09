@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!--[if lt IE 9]>
+        <script
+            src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+        </script>
+    <![endif]-->
 
     <title>Global Web</title>
 
@@ -36,7 +41,7 @@
                 <div id="cz">
                     <li><a href="index.html">Home</a></li>
                 </div>
-                <div class="mobile">
+                <div class="mobile-dropdown">
                     <li><a href="unitedstates.html">About The US</a></li>
                     <li><a href="vietnam.html">About Viet Nam</a></li>
                     <li><a href="liviingconditions.html">Living Conditions</a></li>
@@ -85,37 +90,49 @@
                     </div>
 
                     <label for="rating" id="rating-text">
-                        <p>Please rate this site's features:</p>
+                        <p>Please rate this site:</p>
                     </label>
 
                     <div class="rating-buttons">
                         <div id="c014">
-                            <!-- <span>Amazing</span> -->
-                            <div class="rating" name="rating" id="rating" num="5" value="1" accesskey="1" tabindex="5">1
+                            <div class="rating-right">
+                                <span>Horrible</span>
+                            </div>
+                            <div class="rating">
+                                <input type="radio" name="rating" id="rating" num="1" value="1" accesskey="1"
+                                    tabindex="5">
                             </div>
                         </div>
 
                         <div id="c024">
-                            <!-- <span>Above Average</span> -->
-                            <div class="rating" name="rating" id="rating" num="4" value="2" accesskey="2" tabindex="6">2
+                            <span>Below Average</span>
+                            <div class="rating">
+                                <input type="radio" name="rating" id="rating" num="2" value="2" accesskey="2"
+                                    tabindex="6">
                             </div>
                         </div>
 
                         <div id="c034">
-                            <!-- <span>Average</span> -->
-                            <div class="rating" name="rating" id="rating" num="3" value="3" accesskey="3" tabindex="7">3
+                            <span>Average</span>
+                            <div class="rating">
+                                <input type="radio" name="rating" id="rating" num="3" value="3" accesskey="3"
+                                    tabindex="7">
                             </div>
                         </div>
 
                         <div id="c044">
-                            <!-- <span>Below Average</span> -->
-                            <div class="rating" name="rating" id="rating" num="2" value="4" accesskey="4" tabindex="8">4
+                            <span>Above Average</span>
+                            <div class="rating">
+                                <input type="radio" name="rating" id="rating" num="4" value="4" accesskey="4"
+                                    tabindex="8">
                             </div>
                         </div>
 
                         <div id="c054">
-                            <!-- <span>Horrible</span> -->
-                            <div class="rating" name="rating" id="rating" num="1" value="5" accesskey="5" tabindex="9">5
+                            <span>Amazing</span>
+                            <div class="rating">
+                                <input type="radio" name="rating" id="rating" num="5" value="5" accesskey="5"
+                                    tabindex="9">
                             </div>
                         </div>
                     </div>

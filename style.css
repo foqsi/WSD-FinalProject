@@ -103,7 +103,7 @@ nav li {
     display: block;
 }
 
-.mobile {
+.mobile-dropdown {
     display: none;
 }
 
@@ -159,6 +159,10 @@ main>h2 {
     padding: 10px;
     width: 50%;
     display: block;
+}
+
+ul {
+    margin-left: 50px;
 }
 
 
@@ -236,26 +240,40 @@ textarea {
 
 .rating-buttons {
     display: flex;
+    flex-direction: column;
     gap: 2px;
     padding-bottom: 10px;
     padding-top: 10px;
     margin-bottom: 25px;
+    width: auto;
+    height: auto;
 }
 
-.rating {
+/* .rating {
     background-color: #168013;
     border: 2px solid black;
     border-radius: 50%;
     width: 30px;
     text-align: center;
+} */
+
+
+
+form .rating-buttons span {
+    font-size: 0.6em;
+    float: right;
 }
 
-.rating:hover {
+form .rating-buttons .rating span {
+    text-align: left !important;
+}
+
+/* .rating:hover {
     background-color: #24ff1d;
     cursor: pointer;
     transform: scale(1.1);
     transition: all 0.3s ease;
-}
+} */
 
 #Submit,
 #reset {
@@ -342,10 +360,7 @@ label.error {
     body {
         width: 100%;
         max-width: 768px;
-    }
-
-    header {
-        text-align: left;
+        min-width: 0;
     }
 
     nav {
@@ -369,38 +384,60 @@ label.error {
         padding: 5px;
     }
 
+    .dropdown {
+        display: none;
+    }
+
+    .mobile-dropdown {
+        display: block;
+    }
+
     .content {
-        display: flex;
+        display: block;
         flex-direction: column;
-        padding: 0;
-        margin: 0;
-        align-items: left;
+        width: 100%;
+    }
+
+    #usa,
+    #vietnam {
+        width: auto;
+        margin: 5px 0 0 0;
+    }
+
+    #usa>p,
+    #vietnam>p {
+        font-size: 0.8em;
+        text-align: justify;
     }
 
     img {
         display: none;
     }
 
-    main>h2 {
-        font-size: 1.5em;
-        text-align: left;
+    main>p {
+        margin: 5px;
     }
 
-    p {
-        font-size: 0.8em;
-        text-align: left !important;
+    ul>li {
+        font-size: .6em;
     }
 
-    footer>p {
-        text-align: center !important;
+    .text-left,
+    .text-right {
+        width: auto;
+        margin: 5px 0 0 0;
     }
 
-    .dropdown {
-        display: none;
+    .contact-page form {
+        width: 100%;
     }
 
-    .mobile {
-        display: block;
+    .contact-page>form>input {
+        margin-bottom: 5px;
+    }
+
+    .contact-page>form>textarea {
+        margin-bottom: 5px;
     }
 
     #cz:hover,
