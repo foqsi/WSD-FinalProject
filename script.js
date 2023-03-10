@@ -12,7 +12,7 @@ function lastModified() {
 }
 
 $(document).ready(function () {
-    // $('form').validate();
+    $('form').validate();
     $(".contact-page").hide();
     $(document).on("click", "#contact-button", function () {
         $(".contact-page").slideToggle(1000);

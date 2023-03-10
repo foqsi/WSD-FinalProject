@@ -19,16 +19,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
     <script src="script.js"></script>
-    <style>
-        body {
-            background-image: none;
-            background-color: #474e3a;
-        }
 
-        #wrapper {
-            background-image: repeating-radial-gradient(#6B8140, #363636);
-        }
-    </style>
 </head>
 
 <body onload="lastModified()">
@@ -36,7 +27,7 @@
         <header>
             <h1>United States or Vietnam</h1>
         </header>
-        <nav>
+        <nav class="HidePrint">
             <ul>
                 <div id="cz">
                     <li><a href="index.html">Home</a></li>
@@ -72,7 +63,7 @@
                 </div>
 
                 <form class="contact" method="post" onsubmit="return validateForm();"
-                    action="http://apollo1.occc.edu/genericFormHandler.php">
+                    action="http://apollo1.occc.edu/user3307/genericFormHandler.php">
                     <!-- <label for="FName" class="c001" style="text-align: right;"><span>*</span>First Name:</label> -->
                     <input type="textbox" class="c001" name="FName" id="FName" accesskey="F" tabindex="1"
                         placeholder="*First Name" class="required">

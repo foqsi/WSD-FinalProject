@@ -1,5 +1,5 @@
 body {
-    background-image: repeating-radial-gradient(#6B8140, #363636);
+    background-image: repeating-radial-gradient(#ffffff, #979797);
     font-family: playfair display, serif;
     font-size: 1.6em;
     margin: 0 auto;
@@ -8,10 +8,10 @@ body {
 }
 
 header {
-    background: #3e553d;
+    background: #4e4e4e;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
-    color: #0E1721;
+    color: #1e98d1;
     font-size: 0.6em;
     padding: 7px;
     text-align: center;
@@ -30,15 +30,16 @@ header {
 /******************** NAV *************************/
 nav a:visited,
 nav a:link {
-    color: #168013;
+    color: #ffffff;
 }
 
 nav a:hover {
-    color: #24ff1d;
+    color: #00d9ff;
 }
 
 nav {
-    padding-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #323e4d;
 }
 
 nav a {
@@ -53,7 +54,7 @@ nav ul {
     flex-direction: row;
     justify-content: center;
     list-style-type: none;
-    gap: 10px;
+    gap: 50px;
     margin: 0;
     padding: 2px;
     border-bottom: 1px solid #000000;
@@ -72,7 +73,7 @@ nav li {
     padding: 0 10px;
     border: 2px solid black;
     border-radius: 10px;
-    background-color: #3e553d;
+    background-color: #575757;
 }
 
 .dropdown-content>li {
@@ -81,7 +82,7 @@ nav li {
     border-bottom: 1px solid #2e2e2e;
     border-right: 1px solid #2e2e2e;
     border-left: 1px solid #2e2e2e;
-    background-color: #3e553d;
+    background-color: #575757;
 }
 
 
@@ -161,6 +162,10 @@ main>h2 {
     display: block;
 }
 
+.text-info {
+    padding: 5px;
+}
+
 ul {
     margin-left: 50px;
 }
@@ -181,10 +186,10 @@ footer>p {
 /******************** FORMS *************************/
 
 #contact-button {
-    background-color: #4d683e;
+    background-color: #4e4e4e;
     border: 2px solid black;
     border-radius: 10px;
-    color: #0E1721;
+    color: #FFF;
     font-size: 0.8em;
     font-weight: bold;
     margin: 0 auto;
@@ -195,8 +200,8 @@ footer>p {
 }
 
 #contact-button:hover {
-    background-color: #5e7a4f;
-    color: #24ff1d;
+    background-color: #4e4e4e;
+    color: #00d9ff;
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -212,7 +217,7 @@ main h6 {
     font-size: .5em;
     font-weight: bold;
     text-align: center;
-    color: #682323;
+    color: #f32929;
 }
 
 label>p {
@@ -277,10 +282,10 @@ form .rating-buttons .rating span {
 
 #Submit,
 #reset {
-    background-color: #4d683e;
+    background-color: #4e4e4e;
     border: 2px solid black;
     border-radius: 10px;
-    color: #0E1721;
+    color: #FFF;
     font-size: 0.8em;
     font-weight: bold;
     margin-bottom: auto;
@@ -295,8 +300,8 @@ form .rating-buttons .rating span {
 
 #Submit:hover,
 #reset:hover {
-    background-color: #5e7a4f;
-    color: #24ff1d;
+    background-color: #4e4e4e;
+    color: #00d9ff;
     cursor: pointer;
     transform: scale(1.05);
     transition: all 0.3s ease;
@@ -366,6 +371,10 @@ label.error {
         min-width: 0;
     }
 
+    h2 {
+        padding: 5px;
+    }
+
     nav {
         font-size: 1.3em;
     }
@@ -404,7 +413,7 @@ label.error {
     #usa,
     #vietnam {
         width: auto;
-        margin: 5px 0 0 0;
+        margin: 5px;
     }
 
     #usa>p,
@@ -418,7 +427,7 @@ label.error {
     }
 
     main>p {
-        margin: 5px;
+        margin: 10px;
     }
 
     ul>li {
@@ -429,6 +438,11 @@ label.error {
     .text-right {
         width: auto;
         margin: 5px 0 0 0;
+    }
+
+    .text-left h3,
+    .text-right h3 {
+        color: #000000
     }
 
     .contact-page form {
@@ -450,7 +464,6 @@ label.error {
     }
 
 }
-
 
 /* Print */
 @media print {
