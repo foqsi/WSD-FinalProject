@@ -17,6 +17,17 @@ header {
     text-align: center;
 }
 
+header h1 {
+    position: relative;
+    right: 4.2em;
+}
+
+#logo {
+    float: left;
+    margin: 10px 0 0 15em;
+
+}
+
 /******************** WRAPPER *************************/
 #wrapper {
     border: 2px solid #000000;
@@ -240,7 +251,6 @@ footer>p {
 form.contact {
     display: block;
     margin: 0 auto;
-    /* width: 50%; */
     width: 33%;
 }
 
@@ -285,16 +295,6 @@ textarea {
     height: auto;
 }
 
-/* .rating {
-    background-color: #168013;
-    border: 2px solid black;
-    border-radius: 50%;
-    width: 30px;
-    text-align: center;
-} */
-
-
-
 form .rating-buttons span {
     font-size: 0.6em;
     float: right;
@@ -303,13 +303,6 @@ form .rating-buttons span {
 form .rating-buttons .rating span {
     text-align: left !important;
 }
-
-/* .rating:hover {
-    background-color: #24ff1d;
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: all 0.3s ease;
-} */
 
 #Submit,
 #reset {
@@ -338,29 +331,6 @@ form .rating-buttons .rating span {
     transition: all 0.3s ease;
 }
 
-/* NO LONGER USED */
-/* label {
-    display: block;
-    float: left;
-    width: 10em;
-    padding-right: 10px;
-    text-align: left;
-    position: relative;
-    left: 50px;
-} */
-
-/* label>span {
-    color: #682323;
-    font-weight: bold;
-    position: relative;
-    bottom: 5px;
-} */
-
-/* .rating-buttons>div>span {
-    font-size: .8em;
-    font-weight: bold;
-    display: none;
-} */
 /******************** Validation *************************/
 label.error {
     color: red;
@@ -400,6 +370,11 @@ label.error {
         width: 100%;
         max-width: 768px;
         min-width: 0;
+    }
+
+    header h1 {
+        position: relative;
+        left: .1em;
     }
 
     #hideMobile {
