@@ -17,6 +17,10 @@ header {
     text-align: center;
 }
 
+header img {
+    box-shadow: none;
+}
+
 header h1 {
     position: relative;
     right: 4.2em;
