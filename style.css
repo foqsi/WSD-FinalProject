@@ -83,6 +83,7 @@ nav li {
     border-right: 1px solid #2e2e2e;
     border-left: 1px solid #2e2e2e;
     background-color: #575757;
+    box-shadow: 5px 5px 5px #6b6b6b;
 }
 
 
@@ -152,7 +153,7 @@ main>h2 {
     text-align: left;
 }
 
-/* LIVING CONDITIONS */
+/* INFO Pages */
 .text-left,
 .text-right {
     border: 2px solid black;
@@ -163,13 +164,43 @@ main>h2 {
 }
 
 .text-info {
-    padding: 5px;
+    padding: 0 10px 0 10px;
 }
 
 ul {
     margin-left: 50px;
 }
 
+h2 {
+    padding-bottom: 40px;
+}
+
+#imageStack ul {
+    margin: 0;
+    padding: 0;
+}
+
+#imageStack ul li {
+    list-style-type: none;
+}
+
+#imageStack {
+    display: flex;
+    gap: 5px;
+}
+
+figure {
+    float: right;
+    text-align: center;
+    position: relative;
+    right: 1.2em;
+    bottom: 1em;
+}
+
+figcaption {
+    font-weight: bold;
+    font-size: 1em;
+}
 
 /******************** FOOTER *************************/
 footer {
@@ -369,6 +400,10 @@ label.error {
         width: 100%;
         max-width: 768px;
         min-width: 0;
+    }
+
+    #hideMobile {
+        display: none;
     }
 
     h2 {

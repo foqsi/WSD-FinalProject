@@ -17,6 +17,8 @@
 
     <title>Global Web</title>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
     <script src="script.js"></script>
 </head>
 
@@ -52,8 +54,55 @@
             </ul>
         </nav>
         <main>
-
+            <h2>Comparing Transportation</h2>
+            <p style="text-align: center;">Transportation between the United States and Viet Nam are
+                fairly similar.</p>
+            <div class="content">
+                <div class="text-left" id="hideMobile">
+                    <div id="imageStack">
+                        <ul>
+                            <li>
+                                <a href="images/Vietnam-by-bike.jpg" target="_blank" title="Travel by Motorbike"><img
+                                        src="images/Vietnam-by-bike.jpg" alt="Travel by Motorbike" width="100"
+                                        height="75">
+                                </a>
+                            </li>
+                            <li><a href="images/Vietnam-by-Ferry.jpg" target="_blank" title="Travel by Ferry"><img
+                                        src="images/Vietnam-by-Ferry.jpg" alt="Travel by Ferry" width="100" height="75">
+                                </a>
+                            </li>
+                            <li><a href="images/Vietnam-by-bus.jpg" target="_blank" title="Travel by bus"><img
+                                        src="images/Vietnam-by-bus.jpg" alt="Travel by bus" width="100" height="75">
+                                </a>
+                            </li>
+                            <li><a href="images/Vietnam-by-train.jpg" target="_blank" title="Travel by train"><img
+                                        src="images/Vietnam-by-train.jpg" alt="Travel by train" width="100" height="75">
+                                </a>
+                            </li>
+                            <li><a href="images/Vietnam-by-plane.jpg" target="_blank" title="Travel by plane"><img
+                                        src="images/Vietnam-by-plane.jpg" alt="Travel by plane" width="100" height="75">
+                                </a>
+                            </li>
+                        </ul>
+                        <figure>
+                            <img src="images/Vietnam-by-bike.jpg" width="400" height="300" alt="Travel by Motorbike">
+                            <figcaption>Travel by Motorbike</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <h3 style="text-align: center;">Viet Nam</h3>
+                    <p>
+                        The main forms of transportation in Viet Nam are motorbikes, trains, and cars/trucks. There is
+                        also
+                        a large bus, plane, and ferry network throughout the country. The tickets for these are very
+                        cheap.
+                    </p>
+                </div>
+            </div>
         </main>
+
+
 
         <footer>
             <p>Last Modified: <span id="lastModified"></span></p>
@@ -62,6 +111,7 @@
                 links of this webpage</p>
             <p>Page information sources: Google and my girlfriend</p>
         </footer>
+    </div>
 </body>
 
 </html>

@@ -13,6 +13,14 @@ function lastModified() {
 
 $(document).ready(function () {
     $('form').validate();
+
+    $('#imageStack a').hover(function () {
+        var imageHref = $(this).attr('href');
+        var imageAlt = $(this).attr('title');
+        $('figure img').attr({ src: imageHref, alt: imageAlt });
+        $('figcaption').html(imageAlt);
+    });
+
     $(".contact-page").hide();
     $(document).on("click", "#contact-button", function () {
         $(".contact-page").slideToggle(1000);
