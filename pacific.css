@@ -1,0 +1,575 @@
+/*  1. Project Name: Pacific
+    2. Author: Edward Davis
+    3. Version: 1.0
+    4. Last Changed: 1/30/23
+
+    Colors::
+    White (background): #FFFFFF;
+    Gray (text): #666666;
+    Blue (header): #000033;
+    Light Blue (nav): #90C7E3;
+    Dark Blue (resort): #000033;
+    Light Blue (footer): #333333;
+    Light Blue (dt): #000033;
+    Light Blue (h2): #3399CC;
+    Light Blue (h3): #000033;
+    Light Blue (nav a): #003;
+    Light Blue (nav a:visited): #90C7E3;
+    Light Blue (nav a:hover): #39C;
+
+    Typography::
+    Body: Arial, Verdana, sans-serif;
+    h1: line-height: 200%; Georga;
+    h2: Georgia, Times New Roman, serif";
+    p: .90em;
+    ul: bold;
+    resort: 1.2em;
+    dt: bold;
+    footer: 70cm, italic;
+*/
+
+/* ---------- Entire Web Page ---------- */
+body {
+    background-image: url("images/background.jpg");
+    color: #666666;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+header,
+nav,
+main,
+footer {
+    display: block;
+}
+
+/* -------------- Header -------------- */
+header {
+    background-color: #000033;
+    color: #FFFFFF;
+    line-height: 200%;
+    font-family: Georgia;
+}
+
+h1 {
+    background-image: url("images/sunset.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 72px;
+    line-height: 200%;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+h2 {
+    color: #3399CC;
+    font-family: Georgia;
+}
+
+h3 {
+    color: #000033;
+}
+
+/* -------------- Wrapper -------------- */
+#wrapper {
+    background-color: #90C7E3;
+    box-shadow: 3px 3px 3px #666666;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    min-width: 700px;
+    width: 80%;
+}
+
+/* ------------ Navigation ------------ */
+nav {
+    float: left;
+    font-weight: bold;
+    padding: 20px 5px 0 5px;
+    width: 160px;
+}
+
+nav a {
+    border: 2px outset #CCC;
+    background-color: #003;
+    color: #FFF;
+    display: block;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+nav a:visited {
+    background-color: #90C7E3;
+}
+
+nav a:hover {
+    background-color: #39C;
+    border: 2px inset #666;
+}
+
+/* --------------- Main --------------- */
+main {
+    background-color: #FFF;
+    margin-left: 170px;
+    padding: 1px 20px 1px 20px;
+}
+
+main ul {
+    list-style-position: inside;
+}
+
+p {
+    font-size: .90em;
+}
+
+ul {
+    font-weight: bold;
+}
+
+.resort {
+    color: #000033;
+    font-size: 1.2em;
+}
+
+dt {
+    color: #000033;
+    font-weight: bold;
+}
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: inline;
+}
+
+/* -------------- Forms -------------- */
+label {
+    display: block;
+    float: left;
+    width: 10em;
+    padding-right: 1em;
+    text-align: right;
+}
+
+input,
+textarea {
+    display: block;
+    margin-bottom: 1em;
+}
+
+#mySubmit {
+    margin-left: 10em;
+    display: inline;
+}
+
+#myReset {
+    display: inline;
+    margin-left: 0.5em;
+}
+
+/* -------------- Footer -------------- */
+footer {
+    background-color: #FFFFFF;
+    clear: both;
+    color: #333333;
+    font-size: .70em;
+    font-style: italic;
+    margin-left: 170px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*---------------- Table ----------------*/
+table {
+    border: 1px solid #39C;
+    border-collapse: collapse;
+    margin: auto;
+    width: 90%;
+}
+
+th,
+td {
+    border: 1px solid #39C;
+    padding: 5px;
+}
+
+td {
+    text-align: center;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+tr:nth-of-type(even) {
+    background-color: #d0efff;
+}
+
+#tableText {
+    font-weight: bold;
+    text-align: center;
+}
+
+form {
+    padding-bottom: 0.2em;
+}
+
+/*------------------- MEDIA ---------------------*/
+main video,
+main embed,
+main img {
+    float: left;
+    padding: 0px 20px 20px 0;
+}
+
+.displayImage {
+    display: none;
+}
+
+.displayVideo {
+    display: block;
+}
+
+/*------------------- GALLERY ---------------------*/
+#gallery {
+    position: relative;
+    height: 260px;
+    clear: both;
+}
+
+#gallery ul {
+    width: 300px;
+    list-style-type: none;
+}
+
+#gallery li {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+#gallery img {
+    border-style: none;
+    color: #333;
+    font-style: italic;
+}
+
+#gallery span {
+    display: none;
+}
+
+#gallery a:hover span {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 340px;
+    text-align: center;
+}
+
+#desktopGallery {
+    display: block;
+}
+
+#mobileGallery {
+    display: none;
+}
+
+/*-------------------- Validation ------------------------------*/
+.formDate {
+    font-size: 0.7em;
+    font-style: italic;
+}
+
+label.error {
+    color: #F00;
+    float: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85em;
+    font-style: italic;
+    left: 28em;
+    position: relative;
+    text-align: left;
+    top: -2em;
+    width: 20em;
+}
+
+/************************************************
+*************************************************
+ **************Tablet Media Query****************
+*************************************************
+************************************************/
+@media only screen and (max-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #wrapper {
+        box-shadow: none;
+        min-width: 0;
+        width: auto;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    nav {
+        float: none;
+        width: auto;
+        padding: 0.5em;
+    }
+
+    nav li {
+        display: inline;
+    }
+
+    nav a {
+        padding: 1em;
+    }
+
+    main {
+        font-size: 90%;
+        margin-left: 0;
+        padding: 1em;
+    }
+
+    footer {
+        margin-left: 0;
+    }
+
+    table {
+        margin: auto;
+    }
+
+    #navBottom {
+        display: none;
+    }
+
+    .shoppingCart img {
+        display: block;
+    }
+
+    .productDescription {
+        clear: both;
+    }
+}
+
+/************************************************
+*************************************************
+ ************Smartphone Media Query**************
+*************************************************
+************************************************/
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+        height: 100%;
+        padding-left: 0.3em;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    footer {
+        margin-left: 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.2em;
+        font-size: 1.3em;
+        border-bottom: 1px solid #300;
+    }
+
+    nav ul {
+        margin: 0;
+        padding-left: 0;
+    }
+
+    nav li {
+        display: block;
+        font-size: 0.85em;
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        padding: 0.1em 0 0.1em 0.4em;
+    }
+
+    main img {
+        display: none;
+        padding-right: 0;
+    }
+
+    main ul {
+        list-style-position: outside;
+    }
+
+    footer {
+        padding: 0;
+    }
+
+    .displayVideo {
+        width: 100%;
+    }
+
+    table {
+        margin: auto;
+    }
+
+    #navBottom {
+        display: none;
+    }
+
+    #mobile {
+        display: inline;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    #myReset,
+    #mySubmit {
+        display: block;
+        margin-left: 2em;
+    }
+
+    label,
+    input,
+    textarea {
+        clear: both;
+        margin: 0.1em 2em 0.4em 0;
+        text-align: left;
+    }
+
+    .shoppingCart img {
+        display: block;
+    }
+
+    .productDescription {
+        clear: both;
+    }
+
+    #desktopGallery {
+        display: none;
+    }
+
+    #mobileGallery {
+        display: block;
+    }
+
+    #gallery a:hover span {
+        display: none;
+    }
+
+    #gallery img {
+        display: block;
+    }
+
+    label.error {
+        left: 20em;
+        font-size: 0.7em;
+    }
+}
+
+/************************************************
+*************************************************
+ ***************Print Media Query****************
+*************************************************
+************************************************/
+@media print {
+    body {
+        background-image: none;
+    }
+
+    h1 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    main {
+        width: 90%;
+        margin: 0 10px 0 10px;
+        padding: 1px 10px 1px 10px;
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    main a::after {
+        content: " (" attr(href) ")";
+        font-size: 0.9em;
+    }
+
+    #wrapper {
+        background-color: #FFF;
+        border: 1px solid #000;
+        box-shadow: none;
+        min-width: 0;
+        width: 95%;
+    }
+
+    #navBottom {
+        display: none;
+    }
+
+    footer {
+        margin-left: 0;
+    }
+
+    .newPage {
+        page-break-before: always;
+    }
+
+    .printHidden {
+        visibility: hidden;
+    }
+
+    .displayImage {
+        display: block;
+    }
+
+    .displayVideo {
+        display: none;
+    }
+
+    #gallery ul {
+        width: 425px;
+    }
+
+    #gallery a:after {
+        content: attr(title);
+    }
+
+    #gallery ul a img {
+        float: left;
+    }
+
+    #desktopGallery {
+        display: none;
+    }
+
+    #mobileGallery {
+        display: block;
+    }
+}
